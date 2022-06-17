@@ -1,0 +1,25 @@
+##CODE 
+//
+#include <iostream>
+using namespace std;
+
+struct item{
+	int MakananMenambahEnergi;
+	int MinumanMenambahAgility;
+};
+
+
+void buff(int basicEnergi, int attackAgility, int MakananMenambahEnergi, int MinumanMenambahAgility){
+	int buffBasicEnergi=basicEnergi+MakananMenambahEnergi;
+	int buffAttackAgility=attackAgility+MinumanMenambahAgility;
+	
+	cout<<"Energi untuk menyerang : "<<basicEnergi<<" + "<<MakananMenambahEnergi<<" Setelah membeli item menjadi "<<buffBasicEnergi<<"\n";
+	cout<<"Agility untuk menyerang : "<<attackAgility<<" + "<<MinumanMenambahAgility<<" Setelah membeli item menjadi "<<buffAttackAgility<<"\n";
+}
+
+int main(){
+	
+	buff(1000, 500, 250, 50);
+	
+	return 0;
+}
