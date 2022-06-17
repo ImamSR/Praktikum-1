@@ -1,0 +1,28 @@
+Total
+
+#include <iostream>
+using namespace std;
+
+void hitungHarga(int hargaSatuan, int jumlahBeli, int diskon) {
+    
+    int totalHarga=hargaSatuan*jumlahBeli;
+    int totalDiskon = totalHarga*diskon/100;
+    int totalHargaKurangDiskon=totalHarga-totalDiskon;
+    
+    cout << "Total harga setelah diskon : " << totalHargaKurangDiskon;
+}
+
+int main() {
+    
+    int tahubulat, hargaTahubulat;
+    
+    cout<<"Harga Tahu bulat satuan: ";
+    cin>>hargaTahubulat;
+    
+    cout<<"Jumlah Tahu bulat yang dibeli: ";
+	cin>>tahubulat;
+	
+	hitungHarga(hargaTahubulat, tahubulat, 5);
+
+    return 0;
+}
